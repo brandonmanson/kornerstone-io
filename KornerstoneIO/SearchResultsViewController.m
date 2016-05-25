@@ -24,6 +24,12 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(void)setCategory:(Category *)category {
+    _selectedCategory = category.categoryName;
+    _categoryLabel.text = _selectedCategory;
+    
+}
+
 /*
 #pragma mark - Navigation
 

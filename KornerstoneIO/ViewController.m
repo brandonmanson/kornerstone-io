@@ -8,7 +8,7 @@
 
 #import "ViewController.h"
 #import <UIKit/UIKit.h>
-
+#import "SearchResultsViewController.h"
 
 @interface ViewController() <UIPickerViewDataSource, UIPickerViewDelegate>
 
@@ -51,5 +51,23 @@
 {
     return _categories[row];
 }
+//- (IBAction)searchButton:(UIButton *)sender {
+//    [self performSegueWithIdentifier:@"categoryToSearchResults" sender:sender];
+//}
 
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+
+    // Make sure your segue name in storyboard is the same as this line
+    if ([[segue identifier] isEqualToString:@"categoryToSearchResults"])
+    {
+        // Get reference to the destination view controller
+        SearchResultsViewController *nextViewController = [segue destinationViewController];
+        // Pass any objects to the view controller here, like...
+        NSString *pickedCategory = [_categories objectAtIndex:[_categoryDropDown selectedRowInComponent:0]];
+        
+       [nextViewController setCategory:pickedCategory];
+        
+    }
+}
 @end
