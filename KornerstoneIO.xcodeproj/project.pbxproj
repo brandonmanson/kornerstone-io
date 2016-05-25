@@ -17,6 +17,7 @@
 		43E7057E1CF5EB9F003E4756 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43E7057C1CF5EB9F003E4756 /* LaunchScreen.storyboard */; };
 		C6DE7EF51CF5EEE700BF493A /* ShoppingList.m in Sources */ = {isa = PBXBuildFile; fileRef = C6DE7EF41CF5EEE700BF493A /* ShoppingList.m */; };
 		C6DE7EF81CF5F98400BF493A /* Category.m in Sources */ = {isa = PBXBuildFile; fileRef = C6DE7EF71CF5F98400BF493A /* Category.m */; };
+		C6DE7EFB1CF6161C00BF493A /* Item.m in Sources */ = {isa = PBXBuildFile; fileRef = C6DE7EFA1CF6161C00BF493A /* Item.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,8 @@
 		C6DE7EF41CF5EEE700BF493A /* ShoppingList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShoppingList.m; sourceTree = "<group>"; };
 		C6DE7EF61CF5F98400BF493A /* Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Category.h; sourceTree = "<group>"; };
 		C6DE7EF71CF5F98400BF493A /* Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Category.m; sourceTree = "<group>"; };
+		C6DE7EF91CF6161C00BF493A /* Item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Item.h; sourceTree = "<group>"; };
+		C6DE7EFA1CF6161C00BF493A /* Item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Item.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +80,8 @@
 				C6DE7EF61CF5F98400BF493A /* Category.h */,
 				C6DE7EF71CF5F98400BF493A /* Category.m */,
 				C6DE7EF31CF5EEE700BF493A /* ShoppingList.h */,
+				C6DE7EF91CF6161C00BF493A /* Item.h */,
+				C6DE7EFA1CF6161C00BF493A /* Item.m */,
 				C6DE7EF41CF5EEE700BF493A /* ShoppingList.m */,
 				43E705771CF5EB9F003E4756 /* Main.storyboard */,
 				433887931CF5FD7900F5F5BA /* ListScreenViewController.h */,
@@ -169,6 +174,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6DE7EFB1CF6161C00BF493A /* Item.m in Sources */,
 				43E705761CF5EB9F003E4756 /* ViewController.m in Sources */,
 				433887921CF5FCB200F5F5BA /* SearchResultsViewController.m in Sources */,
 				C6DE7EF51CF5EEE700BF493A /* ShoppingList.m in Sources */,
