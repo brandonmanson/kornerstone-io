@@ -10,4 +10,17 @@
 
 @implementation ShoppingList
 
+-(id)initWithListName:(NSString *)listName {
+    self = [super init];
+    if (self) {
+        _listName = listName;
+        
+    }
+    return self;
+}
+
++(id)initWithListName:(NSString *)listName {
+    return [[self alloc] initWithListName: listName];
+}
+
 @end
