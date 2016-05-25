@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		433887921CF5FCB200F5F5BA /* SearchResultsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 433887911CF5FCB200F5F5BA /* SearchResultsViewController.m */; };
+		433887951CF5FD7900F5F5BA /* ListScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 433887941CF5FD7900F5F5BA /* ListScreenViewController.m */; };
 		43E705701CF5EB9F003E4756 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 43E7056F1CF5EB9F003E4756 /* main.m */; };
 		43E705731CF5EB9F003E4756 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 43E705721CF5EB9F003E4756 /* AppDelegate.m */; };
 		43E705761CF5EB9F003E4756 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43E705751CF5EB9F003E4756 /* ViewController.m */; };
@@ -17,6 +19,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		433887901CF5FCB200F5F5BA /* SearchResultsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchResultsViewController.h; sourceTree = "<group>"; };
+		433887911CF5FCB200F5F5BA /* SearchResultsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchResultsViewController.m; sourceTree = "<group>"; };
+		433887931CF5FD7900F5F5BA /* ListScreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListScreenViewController.h; sourceTree = "<group>"; };
+		433887941CF5FD7900F5F5BA /* ListScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListScreenViewController.m; sourceTree = "<group>"; };
 		43E7056B1CF5EB9F003E4756 /* KornerstoneIO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KornerstoneIO.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43E7056F1CF5EB9F003E4756 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		43E705711CF5EB9F003E4756 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -68,6 +74,10 @@
 				C6DE7EF31CF5EEE700BF493A /* ShoppingList.h */,
 				C6DE7EF41CF5EEE700BF493A /* ShoppingList.m */,
 				43E705771CF5EB9F003E4756 /* Main.storyboard */,
+				433887931CF5FD7900F5F5BA /* ListScreenViewController.h */,
+				433887941CF5FD7900F5F5BA /* ListScreenViewController.m */,
+				433887901CF5FCB200F5F5BA /* SearchResultsViewController.h */,
+				433887911CF5FCB200F5F5BA /* SearchResultsViewController.m */,
 				43E7057A1CF5EB9F003E4756 /* Assets.xcassets */,
 				43E7057C1CF5EB9F003E4756 /* LaunchScreen.storyboard */,
 				43E7057F1CF5EB9F003E4756 /* Info.plist */,
@@ -155,8 +165,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				43E705761CF5EB9F003E4756 /* ViewController.m in Sources */,
+				433887921CF5FCB200F5F5BA /* SearchResultsViewController.m in Sources */,
 				C6DE7EF51CF5EEE700BF493A /* ShoppingList.m in Sources */,
 				43E705731CF5EB9F003E4756 /* AppDelegate.m in Sources */,
+				433887951CF5FD7900F5F5BA /* ListScreenViewController.m in Sources */,
 				43E705701CF5EB9F003E4756 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
