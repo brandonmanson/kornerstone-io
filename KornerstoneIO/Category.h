@@ -10,5 +10,8 @@
 
 @interface Category : NSObject
 @property(strong, nonatomic)NSString *categoryName;
-@property(strong, nonatomic)NSArray *itemsInCategory;
+@property(strong, nonatomic)NSArray *items;
+
+
+
 @end
