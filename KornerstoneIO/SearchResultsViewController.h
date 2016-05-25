@@ -7,7 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Category.h"
 
 @interface SearchResultsViewController : UIViewController
+@property(strong, nonatomic) NSString *selectedCategory;
+@property (weak, nonatomic) IBOutlet UILabel *categoryLabel;
+
+-(void)setCategory:(Category *)category;
+
 
 @end

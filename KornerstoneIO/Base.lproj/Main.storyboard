@@ -31,6 +31,9 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LMz-A8-q5L">
                                 <rect key="frame" x="57" y="460" width="203" height="30"/>
                                 <state key="normal" title="Search Button"/>
+                                <connections>
+                                    <action selector="searchButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IQw-YG-3wC"/>
+                                </connections>
                             </button>
                             <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SL4-Kq-Utz">
                                 <rect key="frame" x="-1" y="114" width="320" height="216"/>
@@ -40,11 +43,12 @@
                     </view>
                     <connections>
                         <outlet property="categoryDropDown" destination="SL4-Kq-Utz" id="8bv-cW-U82"/>
+                        <segue destination="12i-Fp-zYh" kind="push" identifier="categoryToSearchResults" id="XaY-zf-tty"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="234" y="331"/>
+            <point key="canvasLocation" x="153" y="339"/>
         </scene>
         <!--Search Results View Controller-->
         <scene sceneID="9js-Pa-7nb">
@@ -76,6 +80,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="AG6-ci-Jtj"/>
+                    <connections>
+                        <outlet property="categoryLabel" destination="lbA-zL-OMb" id="TDx-p2-bwy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VIh-CC-em6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
