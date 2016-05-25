@@ -9,5 +9,19 @@
 #import "Category.h"
 
 @implementation Category
+- (id)initWithCategoryName:(NSString *)name{
+    self = [super init];
+    if(self){
+        _categoryName = name;
+    }
+    return self;
+}
++ (id)initWithCategoryName:(NSString *)name{
+    return [[self alloc]initWithCategoryName:name];
+    
+}
+
+
+
 
 @end

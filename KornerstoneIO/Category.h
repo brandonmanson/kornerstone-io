@@ -12,6 +12,7 @@
 @property(strong, nonatomic)NSString *categoryName;
 @property(strong, nonatomic)NSArray *items;
 
-
+- (id)initWithCategoryName:(NSString *)name;
++ (id)initWithCategoryName:(NSString *)name;
 
 @end
