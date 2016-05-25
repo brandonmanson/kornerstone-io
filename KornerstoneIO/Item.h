@@ -12,4 +12,14 @@
 @property(strong, nonatomic)NSString *name;
 @property(strong, nonatomic)NSNumber *price;
 @property(strong, nonatomic)NSString *itemDescription;
+
+- (id)initWithItemName:(NSString *)name
+                 price:(NSNumber *)price
+       itemDescription:(NSString *)itemDescription;
+
++ (id)initWithItemName:(NSString *)name
+                 price:(NSNumber *)price
+       itemDescription:(NSString *)itemDescription;
+
+
 @end
