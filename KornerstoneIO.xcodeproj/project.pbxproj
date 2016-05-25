@@ -14,6 +14,7 @@
 		43E7057B1CF5EB9F003E4756 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43E7057A1CF5EB9F003E4756 /* Assets.xcassets */; };
 		43E7057E1CF5EB9F003E4756 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43E7057C1CF5EB9F003E4756 /* LaunchScreen.storyboard */; };
 		C6DE7EF51CF5EEE700BF493A /* ShoppingList.m in Sources */ = {isa = PBXBuildFile; fileRef = C6DE7EF41CF5EEE700BF493A /* ShoppingList.m */; };
+		C6DE7EF81CF5F98400BF493A /* Category.m in Sources */ = {isa = PBXBuildFile; fileRef = C6DE7EF71CF5F98400BF493A /* Category.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,8 @@
 		43E7057F1CF5EB9F003E4756 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C6DE7EF31CF5EEE700BF493A /* ShoppingList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShoppingList.h; sourceTree = "<group>"; };
 		C6DE7EF41CF5EEE700BF493A /* ShoppingList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShoppingList.m; sourceTree = "<group>"; };
+		C6DE7EF61CF5F98400BF493A /* Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Category.h; sourceTree = "<group>"; };
+		C6DE7EF71CF5F98400BF493A /* Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Category.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +68,8 @@
 				43E705721CF5EB9F003E4756 /* AppDelegate.m */,
 				43E705741CF5EB9F003E4756 /* ViewController.h */,
 				43E705751CF5EB9F003E4756 /* ViewController.m */,
+				C6DE7EF61CF5F98400BF493A /* Category.h */,
+				C6DE7EF71CF5F98400BF493A /* Category.m */,
 				C6DE7EF31CF5EEE700BF493A /* ShoppingList.h */,
 				C6DE7EF41CF5EEE700BF493A /* ShoppingList.m */,
 				43E705771CF5EB9F003E4756 /* Main.storyboard */,
@@ -156,6 +161,7 @@
 			files = (
 				43E705761CF5EB9F003E4756 /* ViewController.m in Sources */,
 				C6DE7EF51CF5EEE700BF493A /* ShoppingList.m in Sources */,
+				C6DE7EF81CF5F98400BF493A /* Category.m in Sources */,
 				43E705731CF5EB9F003E4756 /* AppDelegate.m in Sources */,
 				43E705701CF5EB9F003E4756 /* main.m in Sources */,
 			);
