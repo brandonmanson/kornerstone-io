@@ -7,8 +7,13 @@
 //
 
 #import "SearchResultsViewController.h"
+#import <UIKit/UIKit.h>
+#import "Category.h"
+#import "Item.h"
+#import "ShoppingList.h"
 
-@interface SearchResultsViewController ()
+
+@interface SearchResultsViewController () <UITableViewDelegate, UITableViewDataSource>
 
 @end
 
@@ -17,6 +22,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+//    _categoryItemsTableView.dataSource = self;
+//    _categoryItemsTableView.delegate = self;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -24,10 +31,29 @@
     // Dispose of any resources that can be recreated.
 }
 
--(void)setCategory:(Category *)category {
-    _selectedCategory = category.categoryName;
-    _categoryLabel.text = _selectedCategory;
-    
+#pragma mark Setting Up Table View
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return 1;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return [_selectedCategory.items count];
+}
+
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
+    return _selectedCategory.categoryName;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    static NSString *identifier = @"itemInCategory";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
+    }
+    Item *item = [_selectedCategory.items objectAtIndex:indexPath.row];
+    cell.textLabel.text = item.name;
+    return cell;
 }
 
 /*

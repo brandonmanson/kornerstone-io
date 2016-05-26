@@ -10,9 +10,9 @@
 
 @interface Category : NSObject
 @property(strong, nonatomic)NSString *categoryName;
-@property(strong, nonatomic)NSArray *items;
+@property(strong, nonatomic)NSMutableArray *items;
 
-- (id)initWithCategoryName:(NSString *)name;
-+ (id)initWithCategoryName:(NSString *)name;
+- (id)initWithCategoryName:(NSString *)name itemsArray:(NSMutableArray *)itemsArray;
++ (id)initWithCategoryName:(NSString *)name itemsArray:(NSMutableArray *)itemsArray;
 
 @end
