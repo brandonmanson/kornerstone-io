@@ -10,9 +10,10 @@
 
 @interface ViewController : UIViewController
 @property (nonatomic, strong) NSArray *categories;
-@property(weak, nonatomic) IBOutlet UIPickerView *categoryDropDown;
+@property (weak, nonatomic) IBOutlet UIPickerView *categoryDropDown;
 
 -(void)createCategoriesArray;
+- (NSArray *)createItems;
 
 @end
 

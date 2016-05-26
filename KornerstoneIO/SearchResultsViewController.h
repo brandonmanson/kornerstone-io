@@ -10,10 +10,9 @@
 #import "Category.h"
 
 @interface SearchResultsViewController : UIViewController
-@property(strong, nonatomic) NSString *selectedCategory;
+@property(strong, nonatomic) Category *selectedCategory;
 @property (weak, nonatomic) IBOutlet UILabel *categoryLabel;
 
--(void)setCategory:(Category *)category;
-
+@property (strong, nonatomic) IBOutlet UITableView *categoryItemsTableView;
 
 @end

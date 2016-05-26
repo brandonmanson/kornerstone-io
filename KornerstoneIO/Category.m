@@ -9,15 +9,16 @@
 #import "Category.h"
 
 @implementation Category
-- (id)initWithCategoryName:(NSString *)name{
+- (id)initWithCategoryName:(NSString *)name itemsArray:(NSMutableArray *)itemsArray {
     self = [super init];
     if(self){
         _categoryName = name;
+        _items = itemsArray;
     }
     return self;
 }
-+ (id)initWithCategoryName:(NSString *)name{
-    return [[self alloc]initWithCategoryName:name];
++ (id)initWithCategoryName:(NSString *)name itemsArray:(NSMutableArray *)itemsArray{
+    return [[self alloc]initWithCategoryName:name itemsArray:itemsArray];
     
 }
 
